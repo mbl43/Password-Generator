@@ -24,11 +24,17 @@ function App() {
   }, [length, number, charallow, setpassword]);
 
   const passwordcopy = useCallback(() => {
-    passwordInputRef.current?.select();
-    passwordInputRef.current?.setSelectionRange(0, 101);
-    navigator.clipboard.writeText(password);
-    alert("Password Copied *********");
-  }, [password]);
+    const input = passwordInputRef.current;
+    if (navigator.clipboard) {
+       navigator.clipboard.writeText(password).then(() => {
+         alert("Password Copied *********");
+       });
+    } else if (input) {
+       input.select();
+       document.execCommand('copy');
+       alert("Password Copied *********");
+    }
+   }, [password]);
 
   useEffect(() => {
     passwordgen();
