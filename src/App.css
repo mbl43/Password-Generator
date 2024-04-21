@@ -12,3 +12,32 @@
         #989898;
     background-blend-mode: multiply, multiply;
   }
+/* Responsive design */
+@media (max-width: 768px) {
+  .container {
+      width: 90%;
+      padding: 20px;
+  }
+
+  .main {
+      width: 100%;
+      padding: 20px;
+  }
+
+  .password input {
+      width: 100%;
+  }
+
+  .dependices {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .dependices label {
+      margin-bottom: 10px;
+  }
+  .gap-5
+  {
+    gap:0 !important;
+  }
+}

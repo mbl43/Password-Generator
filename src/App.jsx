@@ -37,7 +37,7 @@ function App() {
   return (
     <>
       <div className="container w-full h-screen flex-col justify-center items-center flex bg-gradient">
-        <div className="shadow-xxl main flex flex-wrap flex-col text-center bg-gray-700 rounded-2xl text-white w-5/12 p-5 bg-gradient gradient-background">
+        <div className="shadow-xxl main flex flex-wrap flex-col text-center bg-gray-700 rounded-2xl text-white  p-5 bg-gradient gradient-background">
           <h1 className="text-4xl">Password Generator</h1>
           <div className="password flex flex-wrap items-center justify-center gap-2 mt-8 ">
             <input
