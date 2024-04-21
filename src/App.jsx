@@ -57,7 +57,7 @@ function App() {
               className="  rounded-lg h-12 w-96  border-black border-2 text-black"
             />
             <button
-              className=" hover:bg-blue-300 w-24 p-2 text-center rounded-lg h-12 border-white border-2 "
+              className=" hover:bg-blue-800 w-24 p-2 text-center rounded-lg h-12 border-white border-2 "
               onClick={passwordcopy}
             >
               Copy
